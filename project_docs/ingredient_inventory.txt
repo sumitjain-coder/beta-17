@@ -1,0 +1,45 @@
+Unique ingredients used across 31 recipes: 43
+
+- besan
+- bread
+- broken wheat
+- butter
+- cabbage
+- capsicum
+- carrot
+- cauliflower
+- chickpeas
+- coriander leaves
+- cream
+- cucumber
+- cumin seeds
+- curd
+- dosa batter
+- fenugreek leaves
+- garlic
+- ghee
+- ginger
+- lemon
+- masoor dal
+- milk
+- moong dal
+- mustard seeds
+- oil
+- okra
+- onion
+- paneer
+- peanuts
+- peas
+- poha
+- potato
+- rajma
+- rice
+- semolina
+- soya chunks
+- spinach
+- spring onion
+- sugar
+- tomato
+- toor dal
+- turmeric powder
+- wheat flour

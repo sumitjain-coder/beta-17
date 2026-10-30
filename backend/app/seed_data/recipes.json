@@ -1,0 +1,1004 @@
+[
+  {
+    "name": "Dal Tadka",
+    "meal_type": "lunch",
+    "base_servings": 2,
+    "ingredients": [
+      {
+        "name": "toor dal",
+        "quantity": 120,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "quantity": 60,
+        "unit": "g"
+      },
+      {
+        "name": "tomato",
+        "quantity": 80,
+        "unit": "g"
+      },
+      {
+        "name": "oil",
+        "quantity": 15,
+        "unit": "ml"
+      },
+      {
+        "name": "turmeric powder",
+        "quantity": 3,
+        "unit": "g"
+      }
+    ]
+  },
+  {
+    "name": "Aloo Gobi",
+    "meal_type": "lunch",
+    "base_servings": 2,
+    "ingredients": [
+      {
+        "name": "potato",
+        "quantity": 200,
+        "unit": "g"
+      },
+      {
+        "name": "cauliflower",
+        "quantity": 200,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "quantity": 60,
+        "unit": "g"
+      },
+      {
+        "name": "tomato",
+        "quantity": 80,
+        "unit": "g"
+      },
+      {
+        "name": "oil",
+        "quantity": 15,
+        "unit": "ml"
+      }
+    ]
+  },
+  {
+    "name": "Vegetable Pulao",
+    "meal_type": "lunch",
+    "base_servings": 2,
+    "ingredients": [
+      {
+        "name": "rice",
+        "quantity": 150,
+        "unit": "g"
+      },
+      {
+        "name": "peas",
+        "quantity": 50,
+        "unit": "g"
+      },
+      {
+        "name": "carrot",
+        "quantity": 50,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "quantity": 50,
+        "unit": "g"
+      },
+      {
+        "name": "oil",
+        "quantity": 15,
+        "unit": "ml"
+      }
+    ]
+  },
+  {
+    "name": "Besan Chilla",
+    "meal_type": "breakfast",
+    "base_servings": 2,
+    "ingredients": [
+      {
+        "name": "besan",
+        "quantity": 100,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "quantity": 40,
+        "unit": "g"
+      },
+      {
+        "name": "tomato",
+        "quantity": 40,
+        "unit": "g"
+      },
+      {
+        "name": "oil",
+        "quantity": 10,
+        "unit": "ml"
+      }
+    ]
+  },
+  {
+    "name": "Vegetable Khichdi",
+    "meal_type": "dinner",
+    "base_servings": 2,
+    "ingredients": [
+      {
+        "name": "rice",
+        "quantity": 80,
+        "unit": "g"
+      },
+      {
+        "name": "moong dal",
+        "quantity": 80,
+        "unit": "g"
+      },
+      {
+        "name": "carrot",
+        "quantity": 50,
+        "unit": "g"
+      },
+      {
+        "name": "peas",
+        "quantity": 40,
+        "unit": "g"
+      },
+      {
+        "name": "turmeric powder",
+        "quantity": 3,
+        "unit": "g"
+      }
+    ]
+  },
+  {
+    "name": "Poha",
+    "meal_type": "breakfast",
+    "base_servings": 2,
+    "ingredients": [
+      {
+        "name": "poha",
+        "quantity": 150,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "quantity": 60,
+        "unit": "g"
+      },
+      {
+        "name": "potato",
+        "quantity": 80,
+        "unit": "g"
+      },
+      {
+        "name": "peas",
+        "quantity": 40,
+        "unit": "g"
+      },
+      {
+        "name": "oil",
+        "quantity": 15,
+        "unit": "ml"
+      },
+      {
+        "name": "mustard seeds",
+        "quantity": 3,
+        "unit": "g"
+      }
+    ]
+  },
+  {
+    "name": "Upma",
+    "meal_type": "breakfast",
+    "base_servings": 2,
+    "ingredients": [
+      {
+        "name": "semolina",
+        "quantity": 120,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "quantity": 50,
+        "unit": "g"
+      },
+      {
+        "name": "carrot",
+        "quantity": 40,
+        "unit": "g"
+      },
+      {
+        "name": "peas",
+        "quantity": 30,
+        "unit": "g"
+      },
+      {
+        "name": "oil",
+        "quantity": 12,
+        "unit": "ml"
+      },
+      {
+        "name": "mustard seeds",
+        "quantity": 3,
+        "unit": "g"
+      }
+    ]
+  },
+  {
+    "name": "Aloo Paratha",
+    "meal_type": "breakfast",
+    "base_servings": 2,
+    "ingredients": [
+      {
+        "name": "wheat flour",
+        "quantity": 160,
+        "unit": "g"
+      },
+      {
+        "name": "potato",
+        "quantity": 180,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "quantity": 30,
+        "unit": "g"
+      },
+      {
+        "name": "oil",
+        "quantity": 15,
+        "unit": "ml"
+      },
+      {
+        "name": "coriander leaves",
+        "quantity": 10,
+        "unit": "g"
+      }
+    ]
+  },
+  {
+    "name": "Paneer Bhurji",
+    "meal_type": "breakfast",
+    "base_servings": 2,
+    "ingredients": [
+      {
+        "name": "paneer",
+        "quantity": 150,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "quantity": 60,
+        "unit": "g"
+      },
+      {
+        "name": "tomato",
+        "quantity": 80,
+        "unit": "g"
+      },
+      {
+        "name": "capsicum",
+        "quantity": 50,
+        "unit": "g"
+      },
+      {
+        "name": "oil",
+        "quantity": 10,
+        "unit": "ml"
+      }
+    ]
+  },
+  {
+    "name": "Rajma Masala",
+    "meal_type": "lunch",
+    "base_servings": 2,
+    "ingredients": [
+      {
+        "name": "rajma",
+        "quantity": 120,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "quantity": 80,
+        "unit": "g"
+      },
+      {
+        "name": "tomato",
+        "quantity": 120,
+        "unit": "g"
+      },
+      {
+        "name": "ginger",
+        "quantity": 10,
+        "unit": "g"
+      },
+      {
+        "name": "garlic",
+        "quantity": 8,
+        "unit": "g"
+      },
+      {
+        "name": "oil",
+        "quantity": 15,
+        "unit": "ml"
+      }
+    ]
+  },
+  {
+    "name": "Chole Masala",
+    "meal_type": "lunch",
+    "base_servings": 2,
+    "ingredients": [
+      {
+        "name": "chickpeas",
+        "quantity": 120,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "quantity": 80,
+        "unit": "g"
+      },
+      {
+        "name": "tomato",
+        "quantity": 120,
+        "unit": "g"
+      },
+      {
+        "name": "ginger",
+        "quantity": 10,
+        "unit": "g"
+      },
+      {
+        "name": "garlic",
+        "quantity": 8,
+        "unit": "g"
+      },
+      {
+        "name": "oil",
+        "quantity": 15,
+        "unit": "ml"
+      }
+    ]
+  },
+  {
+    "name": "Bhindi Masala",
+    "meal_type": "lunch",
+    "base_servings": 2,
+    "ingredients": [
+      {
+        "name": "okra",
+        "quantity": 250,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "quantity": 70,
+        "unit": "g"
+      },
+      {
+        "name": "tomato",
+        "quantity": 80,
+        "unit": "g"
+      },
+      {
+        "name": "oil",
+        "quantity": 15,
+        "unit": "ml"
+      },
+      {
+        "name": "turmeric powder",
+        "quantity": 2,
+        "unit": "g"
+      }
+    ]
+  },
+  {
+    "name": "Palak Dal",
+    "meal_type": "dinner",
+    "base_servings": 2,
+    "ingredients": [
+      {
+        "name": "moong dal",
+        "quantity": 100,
+        "unit": "g"
+      },
+      {
+        "name": "spinach",
+        "quantity": 120,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "quantity": 50,
+        "unit": "g"
+      },
+      {
+        "name": "tomato",
+        "quantity": 60,
+        "unit": "g"
+      },
+      {
+        "name": "garlic",
+        "quantity": 6,
+        "unit": "g"
+      },
+      {
+        "name": "oil",
+        "quantity": 12,
+        "unit": "ml"
+      }
+    ]
+  },
+  {
+    "name": "Vegetable Fried Rice",
+    "meal_type": "dinner",
+    "base_servings": 2,
+    "ingredients": [
+      {
+        "name": "rice",
+        "quantity": 150,
+        "unit": "g"
+      },
+      {
+        "name": "carrot",
+        "quantity": 50,
+        "unit": "g"
+      },
+      {
+        "name": "capsicum",
+        "quantity": 50,
+        "unit": "g"
+      },
+      {
+        "name": "peas",
+        "quantity": 40,
+        "unit": "g"
+      },
+      {
+        "name": "spring onion",
+        "quantity": 30,
+        "unit": "g"
+      },
+      {
+        "name": "oil",
+        "quantity": 15,
+        "unit": "ml"
+      }
+    ]
+  },
+  {
+    "name": "Paneer Curry",
+    "meal_type": "dinner",
+    "base_servings": 2,
+    "ingredients": [
+      {
+        "name": "paneer",
+        "quantity": 180,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "quantity": 70,
+        "unit": "g"
+      },
+      {
+        "name": "tomato",
+        "quantity": 140,
+        "unit": "g"
+      },
+      {
+        "name": "cream",
+        "quantity": 30,
+        "unit": "ml"
+      },
+      {
+        "name": "ginger",
+        "quantity": 8,
+        "unit": "g"
+      },
+      {
+        "name": "oil",
+        "quantity": 15,
+        "unit": "ml"
+      }
+    ]
+  },
+  {
+    "name": "Masala Dosa",
+    "meal_type": "breakfast",
+    "base_servings": 2,
+    "ingredients": [
+      {
+        "name": "dosa batter",
+        "quantity": 300,
+        "unit": "g"
+      },
+      {
+        "name": "potato",
+        "quantity": 180,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "quantity": 50,
+        "unit": "g"
+      },
+      {
+        "name": "mustard seeds",
+        "quantity": 3,
+        "unit": "g"
+      },
+      {
+        "name": "oil",
+        "quantity": 15,
+        "unit": "ml"
+      }
+    ]
+  },
+  {
+    "name": "Vegetable Sandwich",
+    "meal_type": "breakfast",
+    "base_servings": 2,
+    "ingredients": [
+      {
+        "name": "bread",
+        "quantity": 4,
+        "unit": "count"
+      },
+      {
+        "name": "potato",
+        "quantity": 100,
+        "unit": "g"
+      },
+      {
+        "name": "tomato",
+        "quantity": 50,
+        "unit": "g"
+      },
+      {
+        "name": "cucumber",
+        "quantity": 50,
+        "unit": "g"
+      },
+      {
+        "name": "butter",
+        "quantity": 20,
+        "unit": "g"
+      }
+    ]
+  },
+  {
+    "name": "Matar Paneer",
+    "meal_type": "lunch",
+    "base_servings": 2,
+    "ingredients": [
+      {
+        "name": "paneer",
+        "quantity": 150,
+        "unit": "g"
+      },
+      {
+        "name": "peas",
+        "quantity": 100,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "quantity": 60,
+        "unit": "g"
+      },
+      {
+        "name": "tomato",
+        "quantity": 100,
+        "unit": "g"
+      },
+      {
+        "name": "oil",
+        "quantity": 15,
+        "unit": "ml"
+      }
+    ]
+  },
+  {
+    "name": "Kadhi Pakora",
+    "meal_type": "lunch",
+    "base_servings": 2,
+    "ingredients": [
+      {
+        "name": "curd",
+        "quantity": 200,
+        "unit": "g"
+      },
+      {
+        "name": "besan",
+        "quantity": 60,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "quantity": 60,
+        "unit": "g"
+      },
+      {
+        "name": "oil",
+        "quantity": 20,
+        "unit": "ml"
+      },
+      {
+        "name": "turmeric powder",
+        "quantity": 3,
+        "unit": "g"
+      }
+    ]
+  },
+  {
+    "name": "Jeera Rice",
+    "meal_type": "dinner",
+    "base_servings": 2,
+    "ingredients": [
+      {
+        "name": "rice",
+        "quantity": 150,
+        "unit": "g"
+      },
+      {
+        "name": "cumin seeds",
+        "quantity": 5,
+        "unit": "g"
+      },
+      {
+        "name": "ghee",
+        "quantity": 15,
+        "unit": "g"
+      }
+    ]
+  },
+  {
+    "name": "Lemon Rice",
+    "meal_type": "lunch",
+    "base_servings": 2,
+    "ingredients": [
+      {
+        "name": "rice",
+        "quantity": 150,
+        "unit": "g"
+      },
+      {
+        "name": "lemon",
+        "quantity": 1,
+        "unit": "count"
+      },
+      {
+        "name": "peanuts",
+        "quantity": 25,
+        "unit": "g"
+      },
+      {
+        "name": "mustard seeds",
+        "quantity": 3,
+        "unit": "g"
+      },
+      {
+        "name": "oil",
+        "quantity": 12,
+        "unit": "ml"
+      }
+    ]
+  },
+  {
+    "name": "Mixed Vegetable Curry",
+    "meal_type": "dinner",
+    "base_servings": 2,
+    "ingredients": [
+      {
+        "name": "potato",
+        "quantity": 100,
+        "unit": "g"
+      },
+      {
+        "name": "carrot",
+        "quantity": 60,
+        "unit": "g"
+      },
+      {
+        "name": "cauliflower",
+        "quantity": 100,
+        "unit": "g"
+      },
+      {
+        "name": "peas",
+        "quantity": 50,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "quantity": 50,
+        "unit": "g"
+      },
+      {
+        "name": "tomato",
+        "quantity": 80,
+        "unit": "g"
+      },
+      {
+        "name": "oil",
+        "quantity": 15,
+        "unit": "ml"
+      }
+    ]
+  },
+  {
+    "name": "Moong Dal Chilla",
+    "meal_type": "breakfast",
+    "base_servings": 2,
+    "ingredients": [
+      {
+        "name": "moong dal",
+        "quantity": 120,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "quantity": 40,
+        "unit": "g"
+      },
+      {
+        "name": "ginger",
+        "quantity": 5,
+        "unit": "g"
+      },
+      {
+        "name": "oil",
+        "quantity": 12,
+        "unit": "ml"
+      }
+    ]
+  },
+  {
+    "name": "Vegetable Thepla",
+    "meal_type": "breakfast",
+    "base_servings": 2,
+    "ingredients": [
+      {
+        "name": "wheat flour",
+        "quantity": 120,
+        "unit": "g"
+      },
+      {
+        "name": "besan",
+        "quantity": 30,
+        "unit": "g"
+      },
+      {
+        "name": "fenugreek leaves",
+        "quantity": 40,
+        "unit": "g"
+      },
+      {
+        "name": "curd",
+        "quantity": 30,
+        "unit": "g"
+      },
+      {
+        "name": "oil",
+        "quantity": 15,
+        "unit": "ml"
+      }
+    ]
+  },
+  {
+    "name": "Soya Chunk Curry",
+    "meal_type": "dinner",
+    "base_servings": 2,
+    "ingredients": [
+      {
+        "name": "soya chunks",
+        "quantity": 80,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "quantity": 60,
+        "unit": "g"
+      },
+      {
+        "name": "tomato",
+        "quantity": 100,
+        "unit": "g"
+      },
+      {
+        "name": "ginger",
+        "quantity": 8,
+        "unit": "g"
+      },
+      {
+        "name": "oil",
+        "quantity": 15,
+        "unit": "ml"
+      }
+    ]
+  },
+  {
+    "name": "Masoor Dal",
+    "meal_type": "dinner",
+    "base_servings": 2,
+    "ingredients": [
+      {
+        "name": "masoor dal",
+        "quantity": 120,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "quantity": 50,
+        "unit": "g"
+      },
+      {
+        "name": "tomato",
+        "quantity": 70,
+        "unit": "g"
+      },
+      {
+        "name": "garlic",
+        "quantity": 6,
+        "unit": "g"
+      },
+      {
+        "name": "oil",
+        "quantity": 12,
+        "unit": "ml"
+      }
+    ]
+  },
+  {
+    "name": "Aloo Matar",
+    "meal_type": "lunch",
+    "base_servings": 2,
+    "ingredients": [
+      {
+        "name": "potato",
+        "quantity": 180,
+        "unit": "g"
+      },
+      {
+        "name": "peas",
+        "quantity": 100,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "quantity": 60,
+        "unit": "g"
+      },
+      {
+        "name": "tomato",
+        "quantity": 80,
+        "unit": "g"
+      },
+      {
+        "name": "oil",
+        "quantity": 15,
+        "unit": "ml"
+      }
+    ]
+  },
+  {
+    "name": "Cabbage Peas Sabzi",
+    "meal_type": "lunch",
+    "base_servings": 2,
+    "ingredients": [
+      {
+        "name": "cabbage",
+        "quantity": 200,
+        "unit": "g"
+      },
+      {
+        "name": "peas",
+        "quantity": 60,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "quantity": 50,
+        "unit": "g"
+      },
+      {
+        "name": "oil",
+        "quantity": 12,
+        "unit": "ml"
+      },
+      {
+        "name": "turmeric powder",
+        "quantity": 2,
+        "unit": "g"
+      }
+    ]
+  },
+  {
+    "name": "Tomato Rice",
+    "meal_type": "lunch",
+    "base_servings": 2,
+    "ingredients": [
+      {
+        "name": "rice",
+        "quantity": 150,
+        "unit": "g"
+      },
+      {
+        "name": "tomato",
+        "quantity": 140,
+        "unit": "g"
+      },
+      {
+        "name": "onion",
+        "quantity": 50,
+        "unit": "g"
+      },
+      {
+        "name": "garlic",
+        "quantity": 5,
+        "unit": "g"
+      },
+      {
+        "name": "oil",
+        "quantity": 12,
+        "unit": "ml"
+      }
+    ]
+  },
+  {
+    "name": "Vegetable Raita",
+    "meal_type": "dinner",
+    "base_servings": 2,
+    "ingredients": [
+      {
+        "name": "curd",
+        "quantity": 200,
+        "unit": "g"
+      },
+      {
+        "name": "cucumber",
+        "quantity": 80,
+        "unit": "g"
+      },
+      {
+        "name": "carrot",
+        "quantity": 40,
+        "unit": "g"
+      }
+    ]
+  },
+  {
+    "name": "Sweet Daliya",
+    "meal_type": "breakfast",
+    "base_servings": 2,
+    "ingredients": [
+      {
+        "name": "broken wheat",
+        "quantity": 100,
+        "unit": "g"
+      },
+      {
+        "name": "milk",
+        "quantity": 300,
+        "unit": "ml"
+      },
+      {
+        "name": "sugar",
+        "quantity": 20,
+        "unit": "g"
+      },
+      {
+        "name": "ghee",
+        "quantity": 8,
+        "unit": "g"
+      }
+    ]
+  }
+]
