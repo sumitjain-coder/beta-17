@@ -3,10 +3,9 @@ fastapi
 uvicorn[standard]
 sqlalchemy
 pymysql
-python-dotenv
+cryptography
 pydantic
+python-dotenv
 pytest
 httpx
 google-genai
-python-dotenv
-pydantic
