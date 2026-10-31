@@ -1,6 +1,6 @@
 
 from decimal import Decimal
-from fastapi import APIRouter, Depends, HTTPException
+from fastapi import APIRouter, Depends, HTTPException, Query
 from pydantic import BaseModel, Field
 from sqlalchemy import select
 from sqlalchemy.orm import Session
@@ -131,3 +131,50 @@ def list_recipes(db: Session = Depends(get_db)):
         })
 
     return result
+@router.get("/recipes/{recipe_id}")
+def get_recipe(
+    recipe_id: int,
+    servings: int | None = Query(default=None, ge=1),
+    db: Session = Depends(get_db)
+):
+    recipe = db.get(Recipe, recipe_id)
+
+    if recipe is None:
+        raise HTTPException(
+            status_code=404,
+            detail="Recipe not found"
+        )
+
+    requested_servings = servings or recipe.base_servings
+
+    factor = Decimal(requested_servings) / Decimal(recipe.base_servings)
+
+    rows = db.execute(
+        select(RecipeIngredient, Ingredient)
+        .join(
+            Ingredient,
+            RecipeIngredient.ingredient_id == Ingredient.id
+        )
+        .where(RecipeIngredient.recipe_id == recipe_id)
+    ).all()
+
+    ingredients = []
+
+    for item, ingredient in rows:
+        scaled_quantity = Decimal(str(item.quantity)) * factor
+
+        ingredients.append({
+            "ingredient_id": ingredient.id,
+            "name": ingredient.name,
+            "quantity": float(scaled_quantity),
+            "unit": item.unit
+        })
+
+    return {
+        "id": recipe.id,
+        "name": recipe.name,
+        "meal_type": recipe.meal_type,
+        "base_servings": recipe.base_servings,
+        "servings": requested_servings,
+        "ingredients": ingredients
+    }

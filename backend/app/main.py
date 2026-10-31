@@ -6,6 +6,8 @@ pushed yet, the app still starts and logs a warning. This keeps main runnable.
 import importlib
 import logging
 import os
+from app.db import Base, engine
+from app import models
 
 from dotenv import load_dotenv
 from fastapi import FastAPI
@@ -49,3 +51,8 @@ for name, owner in ROUTERS.items():
 @app.get("/health")
 def health():
     return {"status": "ok"}
+
+@app.on_event("startup")
+def create_tables():
+    Base.metadata.create_all(bind=engine)
+    log.info("Database tables created/verified")
