@@ -9,7 +9,7 @@ class RecipeIngredient(BaseModel):
     )
 
     name: str = Field(min_length=1)
-    quantity: float
+    quantity: float = Field(gt=0, allow_inf_nan=False)
     unit: Literal["g", "ml", "count"]
 
     @field_validator("quantity")
