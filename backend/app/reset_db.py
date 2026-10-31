@@ -1,7 +1,7 @@
 from app.db import Base, engine, SessionLocal
 from app import models  # noqa: F401  (registers tables)
 from app.models import Household, Ingredient
-
+from app.seed_data.demo_seed import seed_demo
 # (name, base_unit, aliases)
 SEED_INGREDIENTS = [
     ("toor dal", "g", ["arhar dal", "tur dal"]),
@@ -30,6 +30,7 @@ def reset():
         for name, unit, aliases in SEED_INGREDIENTS:
             db.add(Ingredient(name=name, base_unit=unit, aliases=aliases))
         db.commit()
+        seed_demo(db)
     print("Database reset and seeded.")
 
 
