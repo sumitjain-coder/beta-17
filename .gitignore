@@ -1,10 +1,4 @@
-# Environment variables and secrets
-.env
-.env.*
-!.env.example
-*.pem
-
-# Python cache and compiled files
+# Python
 __pycache__/
 *.py[cod]
 *.pyo
@@ -12,9 +6,15 @@ __pycache__/
 
 # Virtual environments
 venv/
-env/
 .venv/
+env/
 version_beta/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+*.pem
 
 # Testing and coverage
 .pytest_cache/
@@ -23,6 +23,9 @@ htmlcov/
 
 # Logs
 *.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
 
 # IDE and editor files
 .vscode/
@@ -40,21 +43,18 @@ Desktop.ini
 node_modules/
 dist/
 .vite/
-npm-debug.log*
-yarn-debug.log*
-pnpm-debug.log*
 
-# Database files
-*.db
-*.sqlite
-*.sqlite3
-
-# Temporary files
+# Temporary and backup files
 *.tmp
 *.temp
 *.bak
 
-# Generated outputs
+# Generated database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Generated output
 mnt/user-data/outputs/
 
 # Archives
