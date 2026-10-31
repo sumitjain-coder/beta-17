@@ -140,3 +140,26 @@ export const markMealDone = (mealId) => request(`/meals/${mealId}/done`, { metho
 export const getSuggestions = ({ date, meal_type }) => request('/suggestions', { params: { date, meal_type } })
 
 // Endpoint helpers for shopping and audit are added in phase F5.
+
+
+// --- Shopping ---
+export const getShopping = (week_start) =>
+  request('/shopping', { params: { week_start } })
+
+export const generateShopping = (week_start) =>
+  request('/shopping/generate', { method: 'POST', params: { week_start } })
+
+export const setShoppingChecked = (id, checked) =>
+  request(`/shopping/${id}`, { method: 'PATCH', body: { checked } })
+
+export const getShoppingHandoff = (week_start) =>
+  request('/shopping/handoff', { params: { week_start } })
+
+// --- Audit ---
+export const getAuditPick = () => request('/audit/pick')
+
+// entries: [{ ingredient_id, quantity, unit }]
+export const submitAudit = (items) =>
+  request('/audit/submit', { method: 'POST', body: { items } })
+
+export const getAuditHistory = () => request('/audit/history')
