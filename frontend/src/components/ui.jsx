@@ -50,3 +50,11 @@ export function EmptyState({ title, hint }) {
     </div>
   )
 }
+
+// Shared Tailwind class strings for form controls and buttons.
+export const inputCls =
+  'w-full rounded-lg border border-stone-300 bg-white px-3 py-2 text-base focus:border-emerald-500 focus:outline-none focus:ring-1 focus:ring-emerald-500'
+export const btnPrimary =
+  'rounded-lg bg-emerald-600 px-4 py-2 font-medium text-white hover:bg-emerald-700 disabled:opacity-50'
+export const btnGhost =
+  'rounded-lg border border-stone-300 px-3 py-2 text-sm font-medium text-stone-700 hover:bg-stone-100 disabled:opacity-50'
