@@ -1,13 +1,14 @@
-
 # Python
 __pycache__/
 *.py[cod]
 *.pyo
+*$py.class
 
 # Virtual environments
 venv/
 .venv/
 env/
+version_beta/
 
 # Environment variables and secrets
 .env
@@ -15,19 +16,40 @@ env/
 !.env.example
 *.pem
 
-# Test and coverage
+# Testing and coverage
 .pytest_cache/
 .coverage
 htmlcov/
 
-# IDE and OS files
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# IDE and editor files
 .vscode/
 .idea/
+*.swp
+*.swo
+
+# OS-generated files
 .DS_Store
 Thumbs.db
+desktop.ini
+Desktop.ini
 
-# Generated files
-*.log
+# Node.js / React
+node_modules/
+dist/
+.vite/
+
+# Temporary and backup files
+*.tmp
+*.temp
+*.bak
+
+# Generated database files
 *.db
 *.sqlite
 *.sqlite3
@@ -37,19 +59,3 @@ mnt/user-data/outputs/
 
 # Archives
 *.zip
-
-desktop.ini
-Desktop.ini
-
-
-
-.env
-.venv/
-venv/
-__pycache__/
-*.pyc
-.pytest_cache/
-.DS_Store
-node_modules/
-dist/
-

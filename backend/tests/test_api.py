@@ -9,20 +9,18 @@ def test_home_page(client):
 
 def test_get_stock(client):
     response = client.get("/stock")
-
     assert response.status_code == 200
 
 
 def test_get_recipes(client):
     response = client.get("/recipes")
-
     assert response.status_code == 200
 
 
 def test_get_meals(client):
     response = client.get("/meals")
-
     assert response.status_code == 200
+
 
 def test_add_stock(client):
     response = client.post(
@@ -33,6 +31,7 @@ def test_add_stock(client):
             "unit": "kg"
         }
     )
+
 
 def test_create_recipe(client):
     response = client.post(
@@ -99,9 +98,8 @@ def test_create_meal(client):
     assert data["message"] == "Meal scheduled successfully"
     assert "id" in data
 
-    
+
 def test_duplicate_meal_not_allowed(client):
-    # Create a recipe
     recipe_response = client.post(
         "/recipes",
         json={
@@ -127,11 +125,9 @@ def test_duplicate_meal_not_allowed(client):
         "servings": 2
     }
 
-    # First meal should be created
     first_response = client.post("/meals", json=meal_data)
     assert first_response.status_code == 201
 
-    # Second meal on the same date and meal type should fail
     second_response = client.post("/meals", json=meal_data)
     assert second_response.status_code == 409
 
