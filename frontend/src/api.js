@@ -56,4 +56,34 @@ export async function request(path, { method = 'GET', body, params } = {}) {
 export const getHealth = () => request('/health')
 export const getDbHealth = () => request('/health/db')
 
-// Endpoint helpers are added per page in later phases (stock, recipes, plan, shopping, audit).
+// --- Stock ---
+export const listStock = () => request('/stock')
+
+// Adding an ingredient that is already in stock ADDS to it (the backend merges).
+export const addStock = ({ ingredient, quantity, unit, expiry_date }) =>
+  request('/stock', {
+    method: 'POST',
+    body: { ingredient, quantity: Number(quantity), unit, expiry_date: expiry_date || null },
+  })
+
+// Editing SETS the exact amount. Note: the backend cannot clear an expiry date once set.
+export const updateStock = (id, { quantity, unit, expiry_date }) =>
+  request(`/stock/${id}`, {
+    method: 'PATCH',
+    body: { quantity: Number(quantity), unit, expiry_date: expiry_date || null },
+  })
+
+export const deleteStock = (id) => request(`/stock/${id}`, { method: 'DELETE' })
+
+// Optional: GET /ingredients is not in the backend yet. If it is missing (404) we return [],
+// and the page falls back to names already in stock.
+export const listIngredients = async () => {
+  try {
+    return await request('/ingredients')
+  } catch (e) {
+    if (e.status === 404) return []
+    throw e
+  }
+}
+
+// Endpoint helpers for recipes, plan, shopping and audit are added in later phases.
