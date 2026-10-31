@@ -118,4 +118,25 @@ export const estimateRecipe = ({ dish_name, servings, meal_type }) =>
 export const saveEstimatedRecipe = (v) =>
   request('/recipes/estimate/save', { method: 'POST', body: recipeBody(v, 'name') })
 
-// Endpoint helpers for plan, shopping and audit are added in later phases.
+// --- Plan, stock check, suggestions ---
+// Returns { start_date, end_date, meals: [{ id, date, meal_type, recipe_id, recipe_name, servings, status }] }
+export const getPlan = (start) => request('/plan', { params: { start } })
+
+// Create or change one slot. Only send breakfast / lunch / dinner (the backend does not validate it).
+export const putPlanMeal = (date, mealType, { recipe_id, servings }) =>
+  request(`/plan/${date}/${mealType}`, {
+    method: 'PUT',
+    body: { recipe_id: Number(recipe_id), servings: Number(servings) },
+  })
+
+// scope: 'today' or 'week' (today + 6 days). Only meals still 'planned' are checked.
+// Returns { scope, meals: [{ meal_id, date, meal_type, ok, items: [{ name, unit, needed, available, missing }] }],
+//           summary: [...same item shape, summed over all meals], all_available }
+export const getPlanCheck = (scope) => request('/plan/check', { params: { scope } })
+
+// Returns { meal_id, already_done, deducted: [{ name, unit, quantity }], shortfalls: [{ name, unit, short_by }] }
+export const markMealDone = (mealId) => request(`/meals/${mealId}/done`, { method: 'POST' })
+
+export const getSuggestions = ({ date, meal_type }) => request('/suggestions', { params: { date, meal_type } })
+
+// Endpoint helpers for shopping and audit are added in phase F5.
