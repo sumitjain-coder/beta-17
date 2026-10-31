@@ -1,9 +1,9 @@
 fastapi
 uvicorn[standard]
-sqlalchemy
+sqlalchemy>=2.0
 pymysql
 cryptography
-pydantic
 python-dotenv
+pydantic
 pytest
 httpx

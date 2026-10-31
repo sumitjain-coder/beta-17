@@ -1,3 +1,48 @@
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+*.pem
+
+# Test and coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Generated files
+*.log
+*.db
+*.sqlite
+*.sqlite3
+
+# Generated output
+mnt/user-data/outputs/
+
+# Archives
+*.zip
+
+desktop.ini
+Desktop.ini
+
+
+
 .env
 .venv/
 venv/
@@ -7,3 +52,4 @@ __pycache__/
 .DS_Store
 node_modules/
 dist/
+
