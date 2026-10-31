@@ -5,10 +5,11 @@ const BASE = (import.meta.env.VITE_API_URL || 'http://localhost:8000').replace(/
 
 // One error type for the whole app. `status` 0 means the server could not be reached.
 export class ApiError extends Error {
-  constructor(message, status = 0) {
+  constructor(message, status = 0, detail = null) {
     super(message)
     this.name = 'ApiError'
     this.status = status
+    this.detail = detail // raw FastAPI detail (string, list or object), for pages that need it
   }
 }
 
@@ -17,6 +18,7 @@ function detailToMessage(body, fallback) {
   const d = body && body.detail
   if (typeof d === 'string') return d
   if (Array.isArray(d)) return d.map((x) => x.msg).filter(Boolean).join('; ') || fallback
+  if (d && typeof d === 'object' && typeof d.message === 'string') return d.message
   return fallback
 }
 
@@ -47,7 +49,7 @@ export async function request(path, { method = 'GET', body, params } = {}) {
   }
 
   if (!res.ok) {
-    throw new ApiError(detailToMessage(data, `Request failed (${res.status})`), res.status)
+    throw new ApiError(detailToMessage(data, `Request failed (${res.status})`), res.status, data && data.detail)
   }
   return data
 }
@@ -86,4 +88,34 @@ export const listIngredients = async () => {
   }
 }
 
-// Endpoint helpers for recipes, plan, shopping and audit are added in later phases.
+// --- Recipes ---
+// The list has ingredient ids only (no names). Open one recipe to get names and scaled quantities.
+export const listRecipes = () => request('/recipes')
+
+// Quantities come back already scaled by the server, in base units (g / ml / count).
+export const getRecipe = (id, servings) => request(`/recipes/${id}`, { params: { servings } })
+
+const recipeBody = (v, nameKey) => ({
+  name: v.name,
+  meal_type: v.meal_type,
+  base_servings: Number(v.base_servings),
+  ingredients: v.ingredients.map((i) => ({
+    [nameKey]: i.name,
+    quantity: Number(i.quantity),
+    unit: i.unit,
+  })),
+})
+
+// Manual recipe: the backend field is `ingredient`.
+export const createRecipe = (v) => request('/recipes', { method: 'POST', body: recipeBody(v, 'ingredient') })
+
+// AI draft: ask for a draft (nothing is saved), then save the reviewed version. Field is `name`.
+export const estimateRecipe = ({ dish_name, servings, meal_type }) =>
+  request('/recipes/estimate', {
+    method: 'POST',
+    body: { dish_name, servings: Number(servings), meal_type: meal_type || null },
+  })
+export const saveEstimatedRecipe = (v) =>
+  request('/recipes/estimate/save', { method: 'POST', body: recipeBody(v, 'name') })
+
+// Endpoint helpers for plan, shopping and audit are added in later phases.
