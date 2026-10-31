@@ -8,6 +8,8 @@ import logging
 import os
 from app.db import Base, engine
 from app import models
+from fastapi.responses import JSONResponse
+from sqlalchemy import text
 
 from dotenv import load_dotenv
 from fastapi import FastAPI
@@ -52,6 +54,24 @@ for name, owner in ROUTERS.items():
 def health():
     return {"status": "ok"}
 
+@app.get("/health/db")
+def health_db():
+    """Check whether the backend can reach MySQL."""
+    try:
+        with engine.connect() as conn:
+            conn.execute(text("SELECT 1"))
+        return {"status": "ok", "database": "connected"}
+    except Exception as exc:
+        log.error("Database health check failed: %s", type(exc).__name__)
+        return JSONResponse(
+            status_code=503,
+            content={
+                "status": "error",
+                "database": "unreachable",
+                "error": type(exc).__name__,
+            },
+        )
+    
 @app.on_event("startup")
 def create_tables():
     Base.metadata.create_all(bind=engine)
